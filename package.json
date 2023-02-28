@@ -1,0 +1,18 @@
+{
+  "name": "daily-practice",
+  "version": "1.0.0",
+  "description": "just practising",
+  "main": "src/bin/server",
+  "scripts": {
+    "start:dev": "nodemon ./src/bin/server",
+    "start": "node ./src/bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
