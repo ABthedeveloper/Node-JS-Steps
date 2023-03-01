@@ -1,10 +1,19 @@
 const express = require('express')
 const app = express()
+
+// parse json request body
 app.use(express.json());
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+//Routes
+const userRoutes = require('./src/routes/user')
+
+// V2 api routes
+app.use("/api/user",userRoutes)
+
+
+
+
+
 
 
 
